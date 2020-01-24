@@ -273,7 +273,7 @@ export default {
 	data: function () {
     return {
 			topHeaderActive: 1,
-			currentYear: new Date().getFullYear() - 1989
+			currentYear: new Date().getFullYear() - 1989 - 1
 		}
   },
 

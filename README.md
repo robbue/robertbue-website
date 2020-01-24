@@ -39,9 +39,9 @@ To develop the website locally, you'll want to run the development server:
 yarn run generate
 ```
 
-### Generate static project
+### Deploy to Heroku
 
-To develop the website locally, you'll want to run the development server:
+To deploy the app to Heroku:
 
 ```sh
 # deploy to Heroku
@@ -49,5 +49,7 @@ git add .
 git commit -m "message"
 git push heroku master
 ```
+
+Or deploy manually from Heroku. The Heroku app is connected to my GitHub.
 
 > Note: This requires [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to be set up locally.
