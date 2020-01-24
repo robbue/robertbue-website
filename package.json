@@ -2,15 +2,14 @@
   "name": "robertbue-portfolio",
   "version": "1.0.0",
   "description": "Personal portfolio 2018",
-  "author": "Robert Bue <robbue@hotmail.com>",
-  "private": true,
+  "author": "Robert Bue <robert@robertbue.no>",
+  "private": false,
 	"engines": {
     "node": ">=6.14.1 <6.15.1",
     "npm": ">=3.10.10"
   },
 	"scripts": {
-    "dev2": "nuxt",
-    "dev": "HOST=192.168.1.153 nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
