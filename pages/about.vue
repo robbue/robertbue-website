@@ -23,9 +23,9 @@
 
 					<div class="columns" ref="columns">
 						<div class="col col1">
-							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>Good Morning Naug (previously Good Morning) in Oslo, Norway</strong>. In my position as <strong>Technical Director</strong> I’m responsible for the developers and quality of technology delivered by the agency. The rest of my time I work as developer.</p>
+							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>Good Morning Naug (previously Good Morning) in Oslo, Norway</strong>. In my position as <strong>Technical Director</strong>, I’m responsible for the developers and the quality of work delivered by the agency on our tech projects. The rest of my time I work as developer.</p>
 
-							<p>All though most of the time I work as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
+							<p>All though I have worked most of my life as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
 
 							<p>One of my other passions is running, and I'm a marathon-/ultra runner that help me to to stay in shape, and push my physical as well as my personal boundaries outside of my work.</p>
 						</div>
@@ -105,7 +105,7 @@
 							<section-detail>
 								<span slot="left">
 									<strong>Developer</strong><br />
-									<a href="https://goodmorning.no/" title="Good Morning - Creative agency in Oslo" target="_blank">Good Morning</a>
+									<a href="https://gmn.no/" title="Good Morning - Creative agency in Oslo" target="_blank">Good Morning</a>
 								</span>
 								<span slot="right">
 									<time>Jul. 2012 - present</time>

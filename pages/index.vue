@@ -17,7 +17,7 @@
 			</page-header>
 			<push-in>
 				<p class="intro" ref="intro">
-					<reveal ref="reveal4">I work as Technical Director and developer at Good Morning Naug in Oslo, Norway. <br />I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
+					<reveal ref="reveal4">I work as a Technical Director and developer at <a href="https://gmn.no/" target="_blank">Good Morning Naug</a> in Oslo, Norway. <br />I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
 				</p>
 
 				<btn href="/about" ref="button" class="large">Get to know me</btn>

@@ -12,7 +12,7 @@ To develop the website locally, you'll want to run the development server:
 # install the dependencies
 yarn
 
-# start local development
+# start local development (http://localhost:3000)
 yarn run dev
 ```
 
