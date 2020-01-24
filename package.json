@@ -1,0 +1,30 @@
+{
+  "name": "robertbue-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio 2018",
+  "author": "Robert Bue <robbue@hotmail.com>",
+  "private": true,
+	"engines": {
+    "node": ">=6.14.1 <6.15.1",
+    "npm": ">=3.10.10"
+  },
+	"scripts": {
+    "dev2": "nuxt",
+    "dev": "HOST=192.168.1.153 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "gsap": "^1.20.3",
+    "intersection-observer": "^0.5.0",
+    "normalize.css": "^7.0.0",
+    "nuxt": "^1.0.0-rc11"
+  },
+  "devDependencies": {
+    "lost": "^8.2.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-pxtorem": "^4.0.1"
+  }
+}

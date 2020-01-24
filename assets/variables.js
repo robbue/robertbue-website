@@ -1,0 +1,47 @@
+const variables = {
+	// Font families
+	'font-header': 'lust, serif',
+	'font-body': 'Raleway, sans-serif',
+
+	// Font weights
+	'font-weight-normal': 400,
+	'font-weight-medium': 500,
+	'font-weight-semibold': 600,
+	'font-weight-bold': 700,
+
+	// Font sizes
+	'size-default': '13px',
+	'size-small': '14px',
+	'size-medium': '15px',
+	'size-large': '16px',
+	'size-xlarge': '17px',
+	'size-xxlarge': '18px',
+	'size-lowheight': '14px',
+
+	// Colors
+	'color-primary': '#ffc87f', // ffcc66 // ff8763 // fffd7f
+	'color-accent': '#fff334', // ffc87f
+	'color-secondary': 'pink',
+	'color-dark': '#141414',
+	'color-darkgrey': '#444444',
+	'color-grey': '#696969',
+	'color-white': '#fff',
+
+	// Media queries
+	'media': {
+		'small': 500,
+		'medium': 500,
+		'large': 1000
+	},
+
+	'mediaRanges': {
+		'--lowest': '(min-width: 1024px) and (height <= 650px)',
+		'--low': '(min-width: 1024px) and (height <= 720px)',
+		'--small': '(min-width: 340px)',
+		'--medium': '(min-width: 769px)',
+		'--large': '(min-width: 1280px)',
+		'--xlarge': '(min-width: 1440px)'
+	}
+};
+
+module.exports = variables;
