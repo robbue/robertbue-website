@@ -50,6 +50,6 @@ git commit -m "message"
 git push heroku master
 ```
 
-Or deploy manually from Heroku. The Heroku app is connected to my GitHub.
-
 > Note: This requires [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to be set up locally.
+
+Or deploy manually from Heroku. The Heroku app is connected to the GitHub repository.
