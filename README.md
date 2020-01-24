@@ -1,27 +1,53 @@
-# robertbue-portfolio
+# `robertbue.no`
 
-> Personal portfolio 2018
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-
-# deploy to Heroku
-$ git add .
-$ git commit -m "message"
-$ git push heroku master
-```
+My personal website created in 2018. Built with Nuxt.js.
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+### Running locally
+
+To develop the website locally, you'll want to run the development server:
+
+```sh
+# install the dependencies
+yarn
+
+# start local development
+yarn run dev
+```
+
+> Note: This requires Node.js and npm to be set up locally, see [nodejs.org](https://nodejs.org) for more information.
+
+### Create build
+
+Build and starting are seperate commands:
+
+```sh
+# build for production
+yarn run build
+
+# run production server
+yarn start
+```
+
+### Generate static project
+
+To develop the website locally, you'll want to run the development server:
+
+```sh
+# generate static project
+yarn run generate
+```
+
+### Generate static project
+
+To develop the website locally, you'll want to run the development server:
+
+```sh
+# deploy to Heroku
+git add .
+git commit -m "message"
+git push heroku master
+```
+
+> Note: This requires [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to be set up locally.
