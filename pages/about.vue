@@ -344,6 +344,18 @@ export default {
   },
 
 	mounted () {
+		if (process.browser && window) {
+			const LocomotiveScroll = require('locomotive-scroll/dist/locomotive-scroll.min.js');
+
+			console.log('LocomotiveScroll', LocomotiveScroll)
+
+			this.scroll = new LocomotiveScroll({
+				el: this.$refs.page,
+				smooth: true,
+				smoothMobile: true
+			});
+		}
+
 		this.intro();
 
 		if (!comp.transition) {
@@ -373,6 +385,8 @@ export default {
 				autoAlpha: 0,
 				ease: Power2.easeOut,
 				onComplete: () => {
+					if (this.scroll) this.scroll.destroy();
+
 					this.mq = window.matchMedia(variables.mediaRanges['--medium']);
 					if (!this.mq.matches) {
 						TweenMax.to(window, 0.5, { scrollTo: 0, ease: Expo.easeInOut, onComplete: done });
@@ -392,8 +406,8 @@ export default {
 <style scoped>
 .page {
 	@media (--medium) {
-		height: 100vh;
-		overflow-y: auto;
+		/* height: 100vh; */
+		/* overflow-y: auto; */
 	}
 
 	& .content {

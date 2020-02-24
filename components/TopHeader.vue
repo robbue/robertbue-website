@@ -58,6 +58,7 @@ export default {
 		height: 2PX;
 
 		background: var(--color-white);
+		background: var(--color-primary);
 
 		transform-origin: 0% 50% 0px;
 	}

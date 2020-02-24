@@ -42,13 +42,15 @@ export default {
 	font-size: 11px;
 	font-weight: var(--font-weight-semibold);
 	color: var(--color-white);
-	border: 1px solid var(--color-grey);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid;
+	/* border: 1px solid var(--color-grey);
+	border: 1px solid rgba(255, 255, 255, 0.1); */
+	border-color: var(--color-primary);
 	/*background: var(--color-primary);
 	border: 0;
 	color: var(--color-dark);*/
 
-	transition: border 250ms ease-out, opacity 250ms ease-out;
+	transition: border 350ms ease-out, opacity 350ms ease-out;
 
 	@media (--small) {
 		padding: 19px 14px;
@@ -73,7 +75,7 @@ export default {
 		transform: scaleX(1.0000001);
 		backface-visibility: hidden;
 
-		transition: transform 150ms ease-out;
+		transition: transform 350ms ease-out;
 
 		@media (--medium) {
 			width: 70px;
@@ -97,10 +99,13 @@ export default {
 		& svg {
 			width: 100%;
 			height: auto;
+			transition: transform 200ms ease-out;
 		}
 
 		& path {
 			fill: var(--color-primary);
+			fill: var(--color-white);
+			transition: fill 350ms ease-out;
 		}
 	}
 
@@ -147,9 +152,16 @@ export default {
 	&:hover {
 		color: var(--color-white);
 		border: 1px solid rgba(255, 255, 255, 1);
+		border-color: var(--color-primary);
+
+		& svg {
+			transform: scaleX(1.1);
+		}
 
 		& .arrow path {
-			fill: var(--color-white);
+
+			/* fill: var(--color-white); */
+			fill: var(--color-primary);
 			/*opacity: 0.6;
 			transform: scaleX(1.08);*/
 		}

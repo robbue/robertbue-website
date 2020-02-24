@@ -12,7 +12,6 @@
 	& .heading {
 		font-family: var(--font-header);
 		font-size: 45px;
-		color: var(--color-primary);
 
 		@media (--medium) {
 			font-size: 82px;

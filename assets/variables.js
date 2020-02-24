@@ -1,7 +1,7 @@
 const variables = {
 	// Font families
-	'font-header': 'lust, serif',
-	'font-body': 'Raleway, sans-serif',
+	'font-header': 'Prata, serif', // lust
+	'font-body': 'Source Sans Pro, sans-serif', // Raleway
 
 	// Font weights
 	'font-weight-normal': 400,
@@ -19,12 +19,12 @@ const variables = {
 	'size-lowheight': '14px',
 
 	// Colors
-	'color-primary': '#ffc87f', // ffcc66 // ff8763 // fffd7f
+	'color-primary': '#e0caca', // ffcc66 // ff8763 // fffd7f // ffc87f
 	'color-accent': '#fff334', // ffc87f
 	'color-secondary': 'pink',
 	'color-dark': '#141414',
 	'color-darkgrey': '#444444',
-	'color-grey': '#696969',
+	'color-grey': '#8c8c8c', // 696969
 	'color-white': '#fff',
 
 	// Media queries

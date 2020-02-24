@@ -23,23 +23,28 @@ module.exports = {
       { name: 'og:description', content: `Award-winning Developer & Interaction designer living in Oslo, Norway.` },
       { name: 'og:image', content: '~/static/images/robert-bue.jpg' }
 		],
+		script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js' }
+		],
 		link: [
 			// { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{ rel: 'apple-touch-icon', sizes: '180x180', href: '/images/apple-touch-icon.png' },
 			{ rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon-16x16.png' },
 			{ rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon-32x32.png' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Alegreya' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' },
-			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' },
+			// { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' },
+			// { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow' },
+			// { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Alegreya' },
+			// { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' },
+			// { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' },
+			// { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Prata|Quicksand:400,500,600,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700&display=swap' },
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Prata|Source+Sans+Pro:400,600' },
 			{ rel: 'stylesheet', href: 'https://use.typekit.net/tia6ylu.css' }
 		]
 	},
 	/*
 	** Customize the progress bar color
 	*/
-	loading: { color: '#ffc87f' },
+	loading: { color: '#e0caca' }, // ffc87f
 	// loading: '~/components/Loading.vue',
 	// loading: false,
 
@@ -102,7 +107,8 @@ module.exports = {
   */
 	plugins: [
 		{ src: '~/plugins/ga.js', ssr: false },
-		{ src: '~/plugins/global.js', ssr: true }
+		{ src: '~/plugins/global.js', ssr: true },
+		{ src: '~/plugins/locomotive-scroll.js', ssr: false, mode: 'client' }
 	],
 	/*
   ** CSS
@@ -115,6 +121,7 @@ module.exports = {
   ** Build configuration
   */
 	build: {
+		transpile: ['locomotive-scroll'],
 		resolve: {
 			alias: {
 				ScrollToPlugin: path.resolve('node_modules', 'gsap/ScrollToPlugin.js')
