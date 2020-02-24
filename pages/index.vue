@@ -26,7 +26,6 @@
 		</div>
 		<picture class="bg" ref="bg">
 			<span role="img" aria-label="Profile picture of Robert Bue"></span>
-			<div class="canvas" ref="canvas"></div>
 			<img src="~/static/images/robert-bue-v2.jpg" alt="Robert Bue" aria-hidden="true">
 		</picture>
   </div>
@@ -119,7 +118,9 @@ export default {
 					resizeTo: this.$refs.bg
 			});
 
-			this.$refs.canvas.appendChild(this.app.view);
+			this.app.view.classList.add('canvas');
+
+			this.$refs.bg.appendChild(this.app.view);
 
 			this.bgContainer = new PIXI.Container();
 
@@ -142,15 +143,15 @@ export default {
 			this.app.stage.addChild(this.bgContainer);
 
 			this.displacementFilter = new PIXI.filters.DisplacementFilter(depthMapSprite);
-			this.app.stage.filters = [this.displacementFilter];
-
-			window.addEventListener('resize', this.onResize);
 
 			if (this.$store.state.isMobile) {
-				window.addEventListener('deviceorientation', this.onDeviceMove);
+				// window.addEventListener('deviceorientation', this.onDeviceMove);
 			} else {
+				this.app.stage.filters = [this.displacementFilter];
 				window.addEventListener('mousemove', this.onMouseMove);
 			}
+
+			window.addEventListener('resize', this.onResize);
 
 			this.onResize();
 		},
@@ -261,7 +262,7 @@ export default {
 	},
 
 	mounted () {
-		this.background();
+		if (!this.$store.state.isMobile) this.background();
 		this.intro();
 
 		if (!comp.transition) {
@@ -292,7 +293,7 @@ export default {
 			window.removeEventListener('resize', this.onResize);
 
 			if (this.$store.state.isMobile) {
-				window.removeEventListener('deviceorientation', this.onDeviceMove);
+				// window.removeEventListener('deviceorientation', this.onDeviceMove);
 			} else {
 				window.removeEventListener('mousemove', this.onMouseMove);
 			}
@@ -324,6 +325,10 @@ export default {
 		margin-left: 6.5%;
 		margin-left: 5%;
 		padding-bottom: 60px;
+
+		@media (--small) {
+			padding-bottom: 80px;
+		}
 
 		@media (--medium) {
 			margin-left: 5%;
@@ -530,6 +535,15 @@ export default {
 		overflow: hidden;
 		visibility: hidden;
 
+		background: url('~/static/images/robert-bue-v2-hq.jpg');
+		background-size: cover;
+		background-position: 60%;
+		background-repeat: no-repeat;
+
+		@media (--medium) {
+			background: none;
+		}
+
 		/* background: url('~/static/images/robert-bue-v2-bw.jpg');
 		background-size: cover;
 		background-position: 60%;
@@ -558,14 +572,6 @@ export default {
 
 		& img {
 			visibility: hidden;
-		}
-
-		& .canvas {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
 		}
 	}
 }
