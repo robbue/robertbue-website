@@ -262,7 +262,7 @@ export default {
 	},
 
 	mounted () {
-		if (!this.$store.state.isMobile) this.background();
+		this.background();
 		this.intro();
 
 		if (!comp.transition) {
@@ -535,14 +535,14 @@ export default {
 		overflow: hidden;
 		visibility: hidden;
 
-		background: url('~/static/images/robert-bue-v2-hq.jpg');
+		/* background: url('~/static/images/robert-bue-v2-hq.jpg');
 		background-size: cover;
 		background-position: 60%;
 		background-repeat: no-repeat;
 
 		@media (--medium) {
 			background: none;
-		}
+		} */
 
 		/* background: url('~/static/images/robert-bue-v2-bw.jpg');
 		background-size: cover;
