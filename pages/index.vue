@@ -115,7 +115,9 @@ export default {
 			this.app = new PIXI.Application({
 			    width: window.innerWidth,
 			    height: window.innerHeight,
-					resizeTo: this.$refs.bg
+					resizeTo: this.$refs.bg,
+					antialias: true,
+					resolution: window.devicePixelRatio
 			});
 
 			this.app.view.classList.add('canvas');
