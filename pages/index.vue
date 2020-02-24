@@ -123,7 +123,8 @@ export default {
 
 			this.bgContainer = new PIXI.Container();
 
-			const image = PIXI.Texture.from(this.$store.state.isMobile ? mobileImage : desktopImage);
+			// const image = PIXI.Texture.from(this.$store.state.isMobile ? mobileImage : desktopImage);
+			const image = PIXI.Texture.from(desktopImage);
 			const imgSprite = new PIXI.Sprite(image);
 			this.bgContainer.addChild(imgSprite);
 
@@ -178,7 +179,7 @@ export default {
 			this.introTL = new TimelineMax({ paused: true })
 			.set(this.fadeElements, { autoAlpha: 0, y: this.$store.state.isMobile ? -10 : -15, immediateRender: true })
 			.set(this.$refs.topHeader.$refs.line, { scaleX: 0, immediateRender: true })
-			.to(this.$refs.bg, 3, { autoAlpha: this.$store.state.isMobile ? 0.5 : 1, ease: Power2.easeOut })
+			.to(this.$refs.bg, 3, { autoAlpha: this.$store.state.isMobile ? 0.4 : 1, ease: Power2.easeOut })
 			// .set(this.$refs.bg, { scale: 1.05, autoAlpha: 0, transformOrigin: '50% 50%', immediateRender: true })
 			.add(revealTls, 0, 'normal', 0.2)
 			.staggerTo(this.fadeElements, 1, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 0.2, 1.6)
@@ -231,7 +232,7 @@ export default {
 				width = IMAGE.width * ratio;
 				height = windowHeight;
 
-				x = -(width - windowWidth) + (windowWidth * 0.85);
+				x = -(width - windowWidth) + (windowWidth * 0.75);
 				y = 0;
 			}
 
@@ -322,7 +323,7 @@ export default {
 		align-self: center;
 		margin-left: 6.5%;
 		margin-left: 5%;
-		padding-bottom: 80px;
+		padding-bottom: 60px;
 
 		@media (--medium) {
 			margin-left: 5%;
@@ -436,10 +437,14 @@ export default {
 			font-size: 20px;
 			font-weight: var(--font-weight-normal);
 			color: var(--color-white);
-			max-width: 280px;
+			max-width: 250px;
 
 			margin-bottom: 25px;
 			/* border: 1px solid red; */
+
+			@media (--small) {
+				max-width: 200px;
+			}
 
 			@media (--large) {
 				max-width: 45%;
