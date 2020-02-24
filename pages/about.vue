@@ -352,7 +352,7 @@ export default {
 			this.scroll = new LocomotiveScroll({
 				el: this.$refs.page,
 				smooth: true,
-				smoothMobile: true
+				smoothMobile: false
 			});
 		}
 

@@ -208,8 +208,8 @@ export default {
 			// 	y: gamma / 5
 			// });
 
-			this.displacementFilter.scale.x = gamma / 5;
-			this.displacementFilter.scale.y = beta / 5;
+			this.displacementFilter.scale.x = gamma;
+			this.displacementFilter.scale.y = beta;
 		},
 
 		onResize: function () {
