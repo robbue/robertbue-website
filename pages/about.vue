@@ -347,8 +347,6 @@ export default {
 		if (process.browser && window) {
 			const LocomotiveScroll = require('locomotive-scroll/dist/locomotive-scroll.min.js');
 
-			console.log('LocomotiveScroll', LocomotiveScroll)
-
 			this.scroll = new LocomotiveScroll({
 				el: this.$refs.page,
 				smooth: true,

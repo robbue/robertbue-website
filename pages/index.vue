@@ -26,7 +26,7 @@
 		</div>
 		<picture class="bg" ref="bg">
 			<span role="img" aria-label="Profile picture of Robert Bue"></span>
-			<img src="~/static/images/robert-bue-v2.jpg" alt="Robert Bue" aria-hidden="true">
+			<img src="~/static/images/robert-bue-v2-hq.jpg" alt="Robert Bue" aria-hidden="true">
 		</picture>
   </div>
 </template>
@@ -116,7 +116,7 @@ export default {
 			    width: window.innerWidth,
 			    height: window.innerHeight,
 					resizeTo: this.$refs.bg,
-					antialias: true,
+					// antialias: true,
 					resolution: window.devicePixelRatio
 			});
 
@@ -145,11 +145,16 @@ export default {
 			this.app.stage.addChild(this.bgContainer);
 
 			this.displacementFilter = new PIXI.filters.DisplacementFilter(depthMapSprite);
+			this.colorFilter = new PIXI.filters.ColorMatrixFilter();
+			// this.blurFilter = new PIXI.filters.BlurFilter();
+			// this.blurFilter.blur = 0;
 
 			if (this.$store.state.isMobile) {
 				// window.addEventListener('deviceorientation', this.onDeviceMove);
+				this.app.stage.filters = [this.colorFilter];
 			} else {
-				this.app.stage.filters = [this.displacementFilter];
+				this.app.stage.filters = [this.displacementFilter, this.colorFilter]; // , this.blurFilter
+				this.colorFilter.desaturate();
 				window.addEventListener('mousemove', this.onMouseMove);
 			}
 
@@ -187,6 +192,8 @@ export default {
 			.add(revealTls, 0, 'normal', 0.2)
 			.staggerTo(this.fadeElements, 1, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 0.2, 1.6)
 			.to(this.$refs.topHeader.$refs.line, 0.6, { scaleX: 1, ease: Expo.easeInOut }, 1.4)
+			.to(this.colorFilter, 2, { alpha: 0, ease: Expo.easeInOut }, 1.4)
+			// .to(this.blurFilter, 2, { blur: 0, ease: Expo.easeInOut }, 1.4)
 			// .to(this.$refs.bg, 3, { scale: 1, autoAlpha: 1, ease: Power2.easeOut }, 1.8);
 		},
 
@@ -199,8 +206,8 @@ export default {
 			// 	x: (window.innerWidth / 2 - e.clientX) / 40,
 			// 	y: (window.innerHeight / 2 - e.clientY) / 40
 			// });
-			this.displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) / 25;
-			this.displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) / 25;
+			this.displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) / 40;
+			this.displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) / 40;
 		},
 
 		onDeviceMove: function (e) {
@@ -300,10 +307,13 @@ export default {
 				window.removeEventListener('mousemove', this.onMouseMove);
 			}
 
+			if (comp.blurFilter) TweenMax.to(comp.blurFilter, 0.25, { blur: 5, ease: Power2.easeOut });
+
 			TweenMax.to([comp.$refs.content, comp.$refs.bg], 0.25, {
 				autoAlpha: 0,
 				ease: Power2.easeOut,
 				onComplete: () => {
+					if (this.app) this.app.destroy();
 					done();
 				}
 			});
