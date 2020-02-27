@@ -202,12 +202,10 @@ export default {
 		},
 
 		onMouseMove: function (e) {
-			// console.log({
-			// 	x: (window.innerWidth / 2 - e.clientX) / 40,
-			// 	y: (window.innerHeight / 2 - e.clientY) / 40
-			// });
-			this.displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) / 40;
-			this.displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) / 40;
+			TweenMax.to(this.displacementFilter.scale, 0.8, {
+				x: (window.innerWidth / 2 - e.clientX) / 40,
+				y: (window.innerHeight / 2 - e.clientY) / 40
+			});
 		},
 
 		onDeviceMove: function (e) {
