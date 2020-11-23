@@ -203,8 +203,8 @@ export default {
 
 		onMouseMove: function (e) {
 			TweenMax.to(this.displacementFilter.scale, 0.8, {
-				x: (window.innerWidth / 2 - e.clientX) / 40,
-				y: (window.innerHeight / 2 - e.clientY) / 40
+				x: (window.innerWidth / 2 - e.clientX) / 50,
+				y: (window.innerHeight / 2 - e.clientY) / 50
 			});
 		},
 

@@ -142,6 +142,17 @@
 									Juror
 								</span>
 								<span slot="right">
+									<time>2020</time>
+									<span class="desc">Design & technology</span>
+								</span>
+					    </section-detail>
+
+							<section-detail>
+								<span slot="left">
+									<a href="https://www.gulltaggen.no/" title="Gulltaggen Awards" target="_blank"><strong>Gulltaggen</strong></a><br />
+									Juror
+								</span>
+								<span slot="right">
 									<time>2019</time>
 									<span class="desc">Craft - tech</span>
 								</span>
@@ -216,7 +227,7 @@
 					</div>
 					<div class="col colMiddle">
 						<list-section heading="Trivia" class="trivia">
-							<section-item>My personal best on a marathon is <span class="highlight">2h 46 min</span>, and my longest consecutive run is <span class="highlight">87km</span>.</section-item>
+							<section-item>My personal best on a marathon is <span class="highlight">2h 37 min</span>, and my longest consecutive run is <span class="highlight">87km</span>.</section-item>
 						</list-section>
 
 						<list-section heading="Talks">
@@ -228,6 +239,7 @@
 						</list-section>
 
 						<list-section heading="Press">
+							<section-item><a href="https://www.digi.no/artikler/intervju-for-a-se-at-han-utviklet-seg-kikker-robert-iblant-pa-den-forste-websiden-han-lagde/503077?key=qxYxui4v" target="_blank">Digi.no interview (2020) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.gulltaggen.no/2017/11/13/kjapp-prat-med-juryleder-handverk-produksjonteknisk-utvikling-robert-bue/" target="_blank">Quick chat with jury leader in Craft - tech, Gulltaggen (2017) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://thefwa.com/interviews/robert-bue" target="_blank">FWA interview (2017)</a></section-item>
 							<section-item><a href="https://www.awwwards.com/awwwards-interviews-robert-bue-from-good-morning.html" target="_blank">Awwwards Interview (2014)</a></section-item>
