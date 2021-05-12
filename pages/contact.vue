@@ -87,9 +87,9 @@ export default {
 	head () {
     return {
       title: 'Get in touch',
-      meta: [
-        { name: 'description', content: '' }
-      ]
+			meta: [
+				{ hid: 'description', name: 'description', content: 'How to get in contact with me through various channels' }
+			]
     }
   },
 

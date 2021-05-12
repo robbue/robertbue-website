@@ -68,8 +68,9 @@
 		color: var(--color-grey);
 	}
 
-	& .summary::-webkit-details-marker {
+	& .summary::-webkit-details-marker, & .summary::marker {
 		display: none;
+		content: '';
 	}
 }
 </style>

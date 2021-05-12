@@ -23,17 +23,46 @@
 
 					<div class="columns" ref="columns">
 						<div class="col col1">
-							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>Good Morning Naug (previously Good Morning) in Oslo, Norway</strong>. In my position as <strong>Technical Director</strong>, I’m responsible for the developers and the quality of work delivered by the agency on our tech projects. The rest of my time I work as developer.</p>
+							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>Good Morning Naug in Oslo, Norway</strong> with over <strong>{{ this.experience }}  years of experience</strong> in creating digital services and experiences. In my position as <strong>Technical Director</strong>, I’m responsible for the developers and the quality of work delivered by the agency in our tech projects. The rest of my time I work as full stack developer.</p>
 
-							<p>All though I have worked most of my life as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
+							<p>All though I have worked most of my professional life as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
 
-							<p>One of my other passions is running, and I'm a marathon-/ultra runner that help me to to stay in shape, and push my physical as well as my personal boundaries outside of my work.</p>
+							<p>One of my other passions is running, and I'm a marathon-/ultra runner that help me to to stay in shape, aw well as push my physical and mental boundaries.</p>
 						</div>
 					</div>
 				</section>
 
 				<div class="items" ref="items">
 					<div class="col colLeft">
+						<list-section heading="Highlighted clients and projects">
+							<div class="projects">
+								<section-item>
+									<span class="client-icon --nordvik">
+										<a href="https://www.nordvibolig.no/" title="Nordvik Bolig" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.31 44.32"><g class="symbol"><path d="M22.16,44.32A22.16,22.16,0,1,1,44.32,22.16,22.19,22.19,0,0,1,22.16,44.32Zm0-42.73A20.57,20.57,0,1,0,42.73,22.16,20.59,20.59,0,0,0,22.16,1.59Z"></path><g><rect x="14.83" y="25.98" width="6.52" height="0.39" transform="translate(-13.21 20.46) rotate(-45)"></rect><rect x="22.9" y="17.91" width="6.52" height="0.39" transform="translate(-5.14 23.8) rotate(-45)"></rect><path d="M32,11.22l-2.88,2.91,1.15,1.15L31.53,14V30.41l-7.19-7.19h0l-12-12a14.88,14.88,0,0,0-1.2,1.21V31.93a14.88,14.88,0,0,0,1.18,1.19l2.88-2.92-1.15-1.15-1.29,1.33V13.93L32,33.12a14.89,14.89,0,0,0,1.2-1.21V12.41A14.88,14.88,0,0,0,32,11.22Z"></path></g></g><g class="text"><path d="M77.87,14h0a7.56,7.56,0,0,0-7.54,7.54v1.12a7.56,7.56,0,0,0,7.54,7.54h0a7.56,7.56,0,0,0,7.54-7.54V21.56A7.56,7.56,0,0,0,77.87,14Zm5.32,9.91a5.33,5.33,0,0,1-5.31,5.31h0a5.33,5.33,0,0,1-5.31-5.31V20.31A5.33,5.33,0,0,1,77.87,15h0a5.33,5.33,0,0,1,5.31,5.31Z"></path><path d="M107.65,14h-6.76l.82,1v14.2l-.82,1h6.76a7.56,7.56,0,0,0,7.53-7.54V21.56A7.56,7.56,0,0,0,107.65,14Zm5.3,9.91a5.33,5.33,0,0,1-5.31,5.31h-3.71V15h3.72a5.33,5.33,0,0,1,5.31,5.31Z"></path><polygon points="149.72 14.02 147.03 14.02 147.84 15 140.39 24.19 140.39 15 141.19 14.02 137.35 14.02 138.17 15.01 138.18 29.21 137.35 30.22 141.21 30.22 140.39 29.23 140.39 25.54 142.51 22.87 148.45 30.22 151.31 30.22 143.94 21.1 149.72 14.02"></polygon><polygon points="131.81 14.02 132.62 15.01 132.63 29.21 131.81 30.22 135.68 30.22 134.85 29.21 134.84 15 135.64 14.02 131.81 14.02"></polygon><polygon points="128.72 14.02 129.51 14.98 123.76 28.93 117.89 14.99 118.69 14.02 115.07 14.02 121.89 30.22 124.25 30.22 124.27 30.16 130.93 14.02 128.72 14.02"></polygon><path d="M86.29,14l.82,1v14.2l-.82,1h3.87l-.83-1V15h3.89a3.53,3.53,0,0,1,3.52,3.52v1.73a3.53,3.53,0,0,1-3.52,3.52H91.67l5.23,6.45h2.86L95.2,24.59A5,5,0,0,0,99,19.75V19a5,5,0,0,0-4.78-5H86.29Z"></path><polygon points="69.36 14.02 66.78 14.02 67.58 14.99 67.58 27.92 56.32 14.02 53.53 14.02 53.45 14.02 54.34 15.11 54.34 29.22 53.53 30.22 56.14 30.22 55.32 29.22 55.32 16.32 66.58 30.22 68.56 30.22 69.45 30.22 68.56 29.13 68.56 14.99 69.36 14.02"></polygon></g></svg></a>
+									</span>
+									<span class="highlight">Website, CMS & API</span><br />
+									<span class="sub">Various projects and services as main website (<a href="https://nextjs.org/" target="_blank">Next.js</a> & <a href="https://styled-components.com/" target="_blank">styled-components</a>), API (<a href="hhttps://www.mongodb.com/" target="_blank">MongoDB</a>, <a href="https://graphql.org/" target="_blank">GraphQL</a> and <a href="https://www.serverless.com/" target="_blank">Serverless</a> on AWS Lambda), <a href="https://craftcms.com/" target="_blank">Craft CMS</a></span>
+								</section-item>
+								<!--
+								<section-item>
+									<span class="client-icon --vh">
+										<a href="https://www.vertikalhelse.no/" title="Vertikal Helse" target="_blank"><svg viewBox="0 0 500 145" xmlns="http://www.w3.org/2000/svg"><path class="st0" d="M39.5 49.2c.5-1.2.9-1.7 2.6-1.7h3c1.5 0 1.8.8 1.4 2L27.2 101c-.7 2-1.4 2.4-3.2 2.4h-2.7c-1.6 0-2.3-.5-3-2.5L.2 49.6c-.4-1.2-.1-2 1.4-2h3.3c1.7 0 2.1.5 2.5 1.7l15.5 44.8 16.6-44.9zM101.3 101.4c0 1.4-.4 1.8-1.8 1.8h-2.7c-1.4 0-1.8-.4-1.8-1.8V78c0-6.1 1.2-9.3 4-12.4 2.7-2.8 6.8-4.3 11.5-4.3 2.2 0 4.8.3 6.6.7.9.3 1.2.6 1.2 1.7v2.6c0 .9-.3 1.3-1.4 1.2-1.4-.1-4.1-.3-5.5-.3-3.3 0-5.9.8-7.6 2.5-2 2-2.7 4.5-2.7 10v21.7zM135.2 85.2c0 5.5.7 8 2.7 10 1.7 1.7 4.2 2.5 7.6 2.5 1.6 0 3.9-.3 5.5-.5 1-.2 1.4.2 1.4 1.2v2.7c0 1-.3 1.4-1.2 1.7-1.9.5-4.6.7-6.6.7-4.7 0-8.9-1.5-11.5-4.3-2.8-3.1-4-6.2-4-12.4V67.3h-4.5c-1.1 0-1.5-.5-1.5-1.6v-2.4c0-1.1.4-1.6 1.5-1.6h4.5v-7.8c0-1.4.4-1.8 1.8-1.8h2.7c1.4 0 1.8.4 1.8 1.8v7.8h12.5c1.1 0 1.5.5 1.5 1.6v2.4c0 1.1-.4 1.6-1.5 1.6h-12.5v17.9zM163.9 46.7c2.7 0 5 2.3 5 5s-2.3 5-5 5-5-2.3-5-5c0-2.6 2.3-5 5-5zm-3.2 16.8c0-1.4.4-1.8 1.8-1.8h2.7c1.4 0 1.8.4 1.8 1.8v37.9c0 1.4-.4 1.8-1.8 1.8h-2.7c-1.4 0-1.8-.4-1.8-1.8V63.5zM181.1 46.1c0-1.4.4-1.8 1.8-1.8h2.7c1.4 0 1.8.4 1.8 1.8v55.3c0 1.4-.4 1.8-1.8 1.8h-2.7c-1.4 0-1.8-.4-1.8-1.8V46.1zm33.6 55.6c.7.8.4 1.5-.6 1.5h-4c-1.6 0-2.1-.3-3-1.4l-13-15.2c-1.5-1.7-1.8-2.3-1.8-3.7v-.6c0-1.5.3-2.2 1.7-3.7l13.1-15.4c.9-1.1 1.4-1.4 3-1.4h4.3c1 0 1.3.7.6 1.5l-16.4 19.1c-.2.2-.2.4 0 .6l16.1 18.7zM238.5 61.4c4.9 0 10.5 1.7 14.2 5.3 3.2 3.2 5.1 7.1 5.1 13.3v21.4c0 1.4-.4 1.8-1.8 1.8h-2.7c-1.4 0-1.8-.4-1.8-1.8V82c0-5-.9-8.2-3.6-10.9-2.4-2.4-5.9-3.7-9.4-3.7-3.4 0-7 1.3-9.4 3.7-2.7 2.7-3.6 5.9-3.6 10.9v1c0 5 .9 8.4 3.6 11 2.4 2.4 5.8 3.7 10 3.7 2.3 0 4.7-.5 6.3-1.2.7-.3 1 .1 1 .7v3.6c0 .7-.2 1.2-.9 1.5-1.7.7-4.2 1.2-6.9 1.2-5.4 0-10.4-1.6-14.2-5.2-3.2-3.2-5.1-7.2-5.1-13.6V80c0-6.2 1.9-10.1 5.1-13.3 3.8-3.6 9.2-5.3 14.1-5.3zM269 1.8c0-1.4.4-1.8 1.8-1.8h2.7c1.4 0 1.8.4 1.8 1.8v99.6c0 1.4-.4 1.8-1.8 1.8h-2.7c-1.4 0-1.8-.4-1.8-1.8V1.8zM80.9 66.7c-3.7-3.6-9.3-5.3-14.2-5.3s-9.6 1.7-13.4 5.3c-3.2 3.2-5.1 7.1-5.1 13.3v5c0 6.2 1.9 10.1 5.1 13.3 3.7 3.6 9.2 5.3 15.4 5.3 3.9 0 9.1-.7 12.2-2 .7-.3.9-.7.9-1.5V97c0-.8-.3-1.3-1.3-1.1-3.7 1.1-8 1.7-11.8 1.7-4.4 0-8.2-1.3-10.7-3.8-2.1-2.1-3.1-4.7-3.4-8.1h28c2.7 0 3.4-.9 3.4-3.5V80c0-6.3-1.9-10.2-5.1-13.3zM79.7 80H54.5v-.3c0-7.4 4.2-12.3 12-12.3s13.2 4.9 13.2 12.3v.3z"/><path class="st1" d="M313.1 142.9c0 1.4-.6 2-2 2h-2.8c-1.4 0-2-.6-2-2V49.6c0-1.4.6-2 2-2h2.8c1.4 0 2 .6 2 2v93.3zm7.4-64.4c-1.4 0-2-.6-2-2v-2.2c0-1.4.6-2 2-2h23V49.6c0-1.4.6-2 2-2h2.8c1.4 0 2 .6 2 2v51.7c0 1.4-.6 2-2 2h-2.8c-1.4 0-2-.6-2-2V78.5h-23zM440.2 61.4c3.5 0 7.1.5 9.9 1.4.8.2 1.2.6 1.2 1.6v2.8c0 .9-.6 1.2-1.4 1-3.2-.7-6.3-1.2-9.3-1.2-5.2 0-9.1 2.2-9.1 6.2 0 8.7 22.5 3.3 22.5 18.1 0 3.7-1.4 6.6-3.7 8.6-2.7 2.4-7.3 3.6-12.4 3.6-3.7 0-7.6-.5-11-1.4-1.1-.3-1.5-.9-1.5-1.9v-2.5c0-1 .4-1.7 1.7-1.3 3.5.9 7.3 1.5 10.3 1.5 5.6 0 10.3-1.8 10.3-6.3 0-9.4-22.5-3.3-22.5-18 0-8 6.3-12.2 15-12.2zM408.2 46.1c0-1.4.4-1.8 1.8-1.8h2.7c1.4 0 1.8.4 1.8 1.8v55.3c0 1.4-.4 1.8-1.8 1.8H410c-1.4 0-1.8-.4-1.8-1.8V46.1zM393.7 66.7c-3.7-3.6-9.3-5.3-14.2-5.3s-9.6 1.7-13.4 5.3c-3.2 3.2-5.1 7.1-5.1 13.3v5c0 6.2 1.9 10.1 5.1 13.3 3.7 3.6 9.2 5.3 15.4 5.3 3.9 0 9.1-.7 12.2-2 .7-.3.9-.7.9-1.5V97c0-.8-.3-1.3-1.3-1.1-3.7 1.1-8 1.7-11.8 1.7-4.4 0-8.2-1.3-10.7-3.8-2.1-2.1-3.1-4.7-3.4-8.1h28c2.7 0 3.4-.9 3.4-3.5V80c.1-6.3-1.8-10.2-5.1-13.3zM392.6 80h-25.2v-.3c0-7.4 4.2-12.3 12-12.3s13.2 4.9 13.2 12.3v.3zM494.9 66.7c-3.7-3.6-9.3-5.3-14.2-5.3s-9.6 1.7-13.4 5.3c-3.2 3.2-5.1 7.1-5.1 13.3v5c0 6.2 1.9 10.1 5.1 13.3 3.7 3.6 9.2 5.3 15.4 5.3 3.9 0 9.1-.7 12.2-2 .7-.3.9-.7.9-1.5V97c0-.8-.3-1.3-1.3-1.1-3.7 1.1-8 1.7-11.8 1.7-4.4 0-8.2-1.3-10.7-3.8-2.1-2.1-3.1-4.7-3.4-8.1h28c2.7 0 3.4-.9 3.4-3.5V80c0-6.3-1.9-10.2-5.1-13.3zM493.7 80h-25.2v-.3c0-7.4 4.2-12.3 12-12.3s13.2 4.9 13.2 12.3v.3z"/></svg></a>
+									</span>
+									<span class="highlight">Website</span><br />
+									<span class="sub">Craft CMS</span>
+								</section-item>
+								-->
+								<section-item>
+									<span class="client-icon --defa">
+										<a href="https://apps.apple.com/no/app/cloudcharge/id1448473172" title="CloudCharge app for DEFA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-8590.868 29.5 52.721 25.98"><g transform="translate(-8590.868 29.5)"><path class="a" d="M3.968,0,0,25.98H52.721L48.753,0ZM3.261,23.371,6.25,2.718H46.362l3.207,20.653ZM12.338,4.783H8.37L5.979,21.306H9.892c5.544,0,6.9-3.424,7.772-9.294S15.218,4.783,12.338,4.783Zm1.848,7.935c-.544,3.913-1.9,5.055-3.207,5.055H9.946l1.467-9.4H12.5C13.86,8.37,14.621,9.511,14.186,12.718ZM36.47,11.142H32.393l.544-2.881h5.272l.544-3.424H30L27.447,21.306H30.98l1.033-6.631h3.968ZM21.958,14.621h3.859l.544-3.642H22.393l.38-2.826h5.381l.489-3.37h-8.8l-2.5,16.468h8.8l.489-3.478H21.36ZM40.927,4.783,34.459,21.306H38.1l.924-2.283h3.75l.38,2.283h3.587L44.188,4.783Zm-.6,10.707,1.359-3.968.544,3.968Z"/></g></svg></a>
+									</span>
+									<span class="highlight">iOS and Android App</span><br />
+									<span class="sub"><a href="https://reactnative.dev/" target="_blank">React Native</a> & <a href="https://redux.js.org/" target="_blank">Redux</a></span>
+								</section-item>
+								<p class="awardText">And <span class="highlight">70+ other projects</span> I have worked on at Good Morning Naug or as freelancer.</p>
+							</div>
+						</list-section>
+
 						<list-section heading="Awards">
 							<div class="awards">
 								<section-item inline>
@@ -94,7 +123,7 @@
 							<section-detail>
 								<span slot="left">
 									<strong>Technical Director</strong><br />
-									<a href="https://gmn.no/" title="Good Morning Naug - Strategi, Teknologi, Magi" target="_blank">Good Morning Naug</a>
+									<a href="https://www.gmn.no/" title="Good Morning Naug - Strategi, Teknologi, Magi" target="_blank">Good Morning Naug</a>
 								</span>
 								<span slot="right">
 									<time>Jul. 2016 - present</time>
@@ -104,8 +133,8 @@
 
 							<section-detail>
 								<span slot="left">
-									<strong>Developer</strong><br />
-									<a href="https://gmn.no/" title="Good Morning - Creative agency in Oslo" target="_blank">Good Morning</a>
+									<strong>Full Stack Developer</strong><br />
+									<a href="https://www.gmn.no/" title="Good Morning - Creative agency in Oslo" target="_blank">Good Morning</a>
 								</span>
 								<span slot="right">
 									<time>Jul. 2012 - present</time>
@@ -227,7 +256,24 @@
 					</div>
 					<div class="col colMiddle">
 						<list-section heading="Trivia" class="trivia">
-							<section-item>My personal best on a marathon is <span class="highlight">2h 37 min</span>, and my longest consecutive run is <span class="highlight">87km</span>.</section-item>
+							<section-item>My personal best on a marathon is <a href="https://www.strava.com/activities/4210191823" title="Strava proof" target="_blank"><span class="highlight">2h 37 min</span></a>, and my longest consecutive run is <span class="highlight">12h</span>.</section-item>
+						</list-section>
+
+						<list-section heading="Preferred stack (currently)">
+							<div class="stack">
+								<section-item>React with Next.js, styled-components & GraphQL<br /><span class="sub">Front-end</span></section-item>
+								<section-item>Node.js, Serverless & MongoDB<br /><span class="sub">Back-end</span></section-item>
+								<section-item>React Native<br /><span class="sub">App development</span></section-item>
+								<section-item>AWS & Heroku<br /><span class="sub">Cloud services</span></section-item>
+							</div>
+						</list-section>
+
+						<list-section heading="Press">
+							<section-item><a href="https://www.kode24.no/koden-bak/haper-a-bytte-ut-craft-cms-med-sanity/73198247" target="_blank">Kode24.no interview (2021) <span class="highlight">[NO]</span></a></section-item>
+							<section-item><a href="https://www.digi.no/artikler/intervju-for-a-se-at-han-utviklet-seg-kikker-robert-iblant-pa-den-forste-websiden-han-lagde/503077?key=qxYxui4v" target="_blank">Digi.no interview (2020) <span class="highlight">[NO]</span></a></section-item>
+							<section-item><a href="https://www.gulltaggen.no/2017/11/13/kjapp-prat-med-juryleder-handverk-produksjonteknisk-utvikling-robert-bue/" target="_blank">Quick chat with jury leader in Craft - tech, Gulltaggen (2017) <span class="highlight">[NO]</span></a></section-item>
+							<section-item><a href="https://thefwa.com/interviews/robert-bue" target="_blank">FWA interview (2017)</a></section-item>
+							<section-item><a href="https://www.awwwards.com/awwwards-interviews-robert-bue-from-good-morning.html" target="_blank">Awwwards Interview (2014)</a></section-item>
 						</list-section>
 
 						<list-section heading="Talks">
@@ -236,13 +282,6 @@
 							<section-item>Building a brand (Kygo Life) (2016)<br /><span class="sub">Norges Kreative Høyskole</span></section-item>
 							<section-item>JavaScript Animations (2015)<br /><span class="sub">NITH (now Westerdals)</span></section-item>
 							<section-item>HTML5 og CSS3 sexyness – trends and features (2013)<br /><span class="sub">MakingWeb</span></section-item>
-						</list-section>
-
-						<list-section heading="Press">
-							<section-item><a href="https://www.digi.no/artikler/intervju-for-a-se-at-han-utviklet-seg-kikker-robert-iblant-pa-den-forste-websiden-han-lagde/503077?key=qxYxui4v" target="_blank">Digi.no interview (2020) <span class="highlight">[NO]</span></a></section-item>
-							<section-item><a href="https://www.gulltaggen.no/2017/11/13/kjapp-prat-med-juryleder-handverk-produksjonteknisk-utvikling-robert-bue/" target="_blank">Quick chat with jury leader in Craft - tech, Gulltaggen (2017) <span class="highlight">[NO]</span></a></section-item>
-							<section-item><a href="https://thefwa.com/interviews/robert-bue" target="_blank">FWA interview (2017)</a></section-item>
-							<section-item><a href="https://www.awwwards.com/awwwards-interviews-robert-bue-from-good-morning.html" target="_blank">Awwwards Interview (2014)</a></section-item>
 						</list-section>
 					</div>
 				</div>
@@ -285,7 +324,8 @@ export default {
 	data: function () {
     return {
 			topHeaderActive: 1,
-			currentYear: new Date().getFullYear() - 1989 - 1
+			currentYear: new Date().getFullYear() - 1989 - 1,
+			experience: new Date().getFullYear() - 2008 - 1
 		}
   },
 
@@ -306,9 +346,11 @@ export default {
 	head () {
     return {
       title: 'About Robert',
-      meta: [
-        { name: 'description', content: '' }
-      ]
+			meta: [
+				{ hid: 'description', name: 'description', content: 'My name is Robert and I have over 12 years of professional experience in creating digital services and experiences' },
+				{ name: 'og:title', content: 'About Robert' },
+	      { name: 'og:description', content: `My name is Robert and I have over 12 years of professional experience in creating digital services and experiences` }
+			]
     }
   },
 
@@ -513,6 +555,66 @@ export default {
 
 				&:hover {
 					color: var(--color-white);
+				}
+			}
+		}
+
+		& .projects {
+			lost-utility: clearfix;
+
+			& .text {
+				margin: 5px 0 25px 0;
+			}
+
+			& .text .sub {
+				display: block;
+				margin-top: 5px;
+
+				& a {
+					color: var(--color-grey);
+
+					&:hover {
+						color: var(--color-white);
+					}
+				}
+			}
+
+			& .client-icon {
+				display: inline-block;
+				height: auto;
+				margin-right: 15px;
+				vertical-align: middle;
+				/* min-width: 105px; */
+				/* opacity: 0.8; */
+
+				& a {
+					display: block;
+				}
+
+				&.--nordvik {
+					& a {
+						width: 90px;
+					}
+				}
+
+				&.--vh {
+					& a {
+						width: 100px;
+					}
+				}
+
+				&.--defa {
+					& a {
+						width: 35px;
+					}
+				}
+
+				& svg {
+					vertical-align: top;
+				}
+
+				& path, & polygon {
+					fill: var(--color-white);
 				}
 			}
 		}

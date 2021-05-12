@@ -17,10 +17,10 @@ module.exports = {
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ name: 'theme-color', content: '#0a0a0a' },
-			{ hid: 'description', name: 'description', content: 'Award-winning Developer & Interaction designer living in Oslo, Norway.' },
+			{ hid: 'description', name: 'description', content: 'Award-winning Full Stack Developer & Interaction designer living in Oslo, Norway.' },
 			{ hid: 'author', name: 'author', content: 'Robert Bue' },
 			{ name: 'og:title', content: 'Robert Bue' },
-      { name: 'og:description', content: `Award-winning Developer & Interaction designer living in Oslo, Norway.` },
+      { name: 'og:description', content: `Award-winning Full Stack Developer & Interaction designer living in Oslo, Norway.` },
       { name: 'og:image', content: '~/static/images/robert-bue.jpg' }
 		],
 		script: [

@@ -17,7 +17,7 @@
 			</page-header>
 			<push-in>
 				<p class="intro-large" ref="intro">
-					<reveal ref="reveal4">I work as a Technical Director and developer at <a href="https://gmn.no/" target="_blank">Good Morning Naug</a> in Oslo, Norway. <br />I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
+					<reveal ref="reveal4">I work as a Technical Director and Full Stack Developer at <a href="https://gmn.no/" target="_blank">Good Morning Naug</a> in Oslo, Norway. <br />I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
 				</p>
 
 				<btn href="/about" ref="button" class="large">Get to know me</btn>
@@ -259,13 +259,10 @@ export default {
 	},
 
 	created () {
-		// console.log('index is created', this._uid, this.$el);
-
 		comp = this;
   },
 
 	beforeMount() {
-		// console.log('before mount', this._uid, this.$el);
 	},
 
 	mounted () {
@@ -282,17 +279,13 @@ export default {
 	transition: {
 		beforeEnter: function (el) {
 			comp.transition = true;
-	    // console.log('beforeEnter', this._uid, this.$el);
 	  },
 
 		enter: function (el, done) {
-	    // console.log('enter2', this._uid, this.$el);
 	    done();
 	  },
 
 		afterEnter: function (el) {
-			// console.log('afterEnter', this._uid, this);
-
 			comp.preloader();
 		},
 
@@ -405,7 +398,6 @@ export default {
 				max-width: 980px;
 			}
 
-
 			/*& .mask:nth-child(2) {
 				font-size: 23px;
 			}
@@ -458,7 +450,7 @@ export default {
 			/* border: 1px solid red; */
 
 			@media (--small) {
-				max-width: 200px;
+				max-width: 220px;
 			}
 
 			@media (--large) {
