@@ -269,6 +269,7 @@
 						</list-section>
 
 						<list-section heading="Press">
+							<section-item><a href="https://www.kode24.no/artikkel/laer-a-gi-et-bilde-3d-effekt-med-webgl/73828604" target="_blank">Creating a 3D-effect on images with WebGL (2021) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.kode24.no/koden-bak/haper-a-bytte-ut-craft-cms-med-sanity/73198247" target="_blank">Kode24.no interview (2021) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.digi.no/artikler/intervju-for-a-se-at-han-utviklet-seg-kikker-robert-iblant-pa-den-forste-websiden-han-lagde/503077?key=qxYxui4v" target="_blank">Digi.no interview (2020) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.gulltaggen.no/2017/11/13/kjapp-prat-med-juryleder-handverk-produksjonteknisk-utvikling-robert-bue/" target="_blank">Quick chat with jury leader in Craft - tech, Gulltaggen (2017) <span class="highlight">[NO]</span></a></section-item>
