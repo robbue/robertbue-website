@@ -44,7 +44,7 @@ module.exports = {
 	/*
 	** Customize the progress bar color
 	*/
-	loading: { color: '#e0caca' }, // ffc87f
+	loading: { color: '#ffecb5' }, // ffc87f // e0caca
 	// loading: '~/components/Loading.vue',
 	// loading: false,
 

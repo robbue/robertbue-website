@@ -65,7 +65,7 @@ export default {
 
 		&.primaryColor {
 			background: var(--color-primary);
-			background: #e0caca;
+			background: #ffecb5;
 		}
 
 		&.dark {
