@@ -23,11 +23,11 @@
 
 					<div class="columns" ref="columns">
 						<div class="col col1">
-							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>Good Morning Naug in Oslo, Norway</strong> with over <strong>{{ this.experience }}  years of experience</strong> in creating digital services and experiences. In my position as <strong>Technical Director</strong>, I’m responsible for the developers and the quality of work delivered by the agency in our tech projects. The rest of my time I work as full stack developer.</p>
+							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>TRY Pearl in Oslo, Norway</strong> with over <strong>{{ this.experience }} years of experience</strong> in creating digital services and experiences. In my position as <strong>Solution Architect</strong>, I help clients to build modern, scalable services and platforms with focus on user experience.</p>
 
-							<p>All though I have worked most of my professional life as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
+							<p>All though I have worked most of my professional life with technology and as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
 
-							<p>One of my other passions is running, and I'm a marathon-/ultra runner that help me to to stay in shape, aw well as push my physical and mental boundaries.</p>
+							<p>One of my other passions is running, and I'm a marathon-/ultra runner that help me to to stay in shape, as well as pushing my physical and mental boundaries.</p>
 						</div>
 					</div>
 				</section>
@@ -122,11 +122,21 @@
 						<list-section heading="Experience">
 							<section-detail>
 								<span slot="left">
-									<strong>Technical Director</strong><br />
+									<strong>Solution Architect</strong><br />
+									<a href="https://www.trypearl.no/" title="TRY Pearl - design- og teknologiselskap" target="_blank">TRY Pearl</a>
+								</span>
+								<span slot="right">
+									<time>Sept. 2021 - present</time>
+								</span>
+					    </section-detail>
+
+							<section-detail>
+								<span slot="left">
+									<strong>Technical Director & Partner</strong><br />
 									<a href="https://www.gmn.no/" title="Good Morning Naug - Strategi, Teknologi, Magi" target="_blank">Good Morning Naug</a>
 								</span>
 								<span slot="right">
-									<time>Jul. 2016 - present</time>
+									<time>Jul. 2016 - Sept. 2021</time>
 									<span class="desc">previously Good Morning</span>
 								</span>
 					    </section-detail>
@@ -137,7 +147,7 @@
 									<a href="https://www.gmn.no/" title="Good Morning - Creative agency in Oslo" target="_blank">Good Morning</a>
 								</span>
 								<span slot="right">
-									<time>Jul. 2012 - present</time>
+									<time>Jul. 2012 - Sept. 2021</time>
 								</span>
 					    </section-detail>
 
@@ -256,17 +266,17 @@
 					</div>
 					<div class="col colMiddle">
 						<list-section heading="Trivia" class="trivia">
-							<section-item>My personal best on a marathon is <a href="https://www.strava.com/activities/4210191823" title="Strava proof" target="_blank"><span class="highlight">2h 37 min</span></a>, and my longest consecutive run is <span class="highlight">12h</span>.</section-item>
+							<section-item>My personal best on a marathon is <a href="https://www.strava.com/activities/4210191823" title="Strava proof" target="_blank"><span class="highlight">2 hours 36 minutes</span></a>, and my longest consecutive run is <span class="highlight">12 hours</span>.</section-item>
 						</list-section>
 
-						<list-section heading="Preferred stack (currently)">
+						<!-- <list-section heading="Preferred stack (currently)">
 							<div class="stack">
 								<section-item>React with Next.js, styled-components & GraphQL<br /><span class="sub">Front-end</span></section-item>
 								<section-item>Node.js, Serverless & MongoDB<br /><span class="sub">Back-end</span></section-item>
 								<section-item>React Native<br /><span class="sub">App development</span></section-item>
 								<section-item>AWS & Heroku<br /><span class="sub">Cloud services</span></section-item>
 							</div>
-						</list-section>
+						</list-section> -->
 
 						<list-section heading="Press">
 							<section-item><a href="https://www.kode24.no/artikkel/laer-a-gi-et-bilde-3d-effekt-med-webgl/73828604" target="_blank">Creating a 3D-effect on images with WebGL (2021) <span class="highlight">[NO]</span></a></section-item>
