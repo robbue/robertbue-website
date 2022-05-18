@@ -17,7 +17,7 @@
 			</page-header>
 			<push-in>
 				<p class="intro-large" ref="intro">
-					<reveal ref="reveal4">I work as a Solution Architect at <a href="https://www.trypearl.no/" target="_blank">TRY Pearl</a> in Oslo, Norway. I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
+					<reveal ref="reveal4">I work as a Solution Architect and Team Lead at <a href="https://www.trydig.no/" target="_blank">TRY Dig</a> in Oslo, Norway. I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
 				</p>
 
 				<btn href="/about" ref="button" class="large">Get to know me</btn>

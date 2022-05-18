@@ -23,7 +23,7 @@
 
 					<div class="columns" ref="columns">
 						<div class="col col1">
-							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>TRY Pearl in Oslo, Norway</strong> with over <strong>{{ this.experience }} years of experience</strong> in creating digital services and experiences. In my position as <strong>Solution Architect</strong>, I help clients to build modern, scalable services and platforms with focus on user experience.</p>
+							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>TRY Dig in Oslo, Norway</strong> with over <strong>{{ this.experience }} years of experience</strong> in creating digital services and experiences. In my position as <strong>Solution Architect</strong>, I help clients to build modern, scalable services and platforms with focus on user experience. And in my position as a <strong>Team Lead</strong>, I help developers to keep focus and reach their potential.</p>
 
 							<p>All though I have worked most of my professional life with technology and as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
 
@@ -122,11 +122,12 @@
 						<list-section heading="Experience">
 							<section-detail>
 								<span slot="left">
-									<strong>Solution Architect</strong><br />
-									<a href="https://www.trypearl.no/" title="TRY Pearl - design- og teknologiselskap" target="_blank">TRY Pearl</a>
+									<strong>Solution Architect & Team Lead</strong><br />
+									<a href="https://www.trydig.no/" title="TRY Dig - design- og teknologiselskap" target="_blank">TRY Dig</a>
 								</span>
 								<span slot="right">
 									<time>Sept. 2021 - present</time>
+									<span class="desc">previously TRY Pearl</span>
 								</span>
 					    </section-detail>
 
@@ -279,6 +280,7 @@
 						</list-section> -->
 
 						<list-section heading="Press">
+							<section-item><a href="https://www.kode24.no/artikkel/robert-fra-good-morning-naug-til-try-pearl-etter-ni-ar/74305292" target="_blank">From Good Morning Naug to TRY (2021) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.kode24.no/artikkel/laer-a-gi-et-bilde-3d-effekt-med-webgl/73828604" target="_blank">Creating a 3D-effect on images with WebGL (2021) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.kode24.no/koden-bak/haper-a-bytte-ut-craft-cms-med-sanity/73198247" target="_blank">Kode24.no interview (2021) <span class="highlight">[NO]</span></a></section-item>
 							<section-item><a href="https://www.digi.no/artikler/intervju-for-a-se-at-han-utviklet-seg-kikker-robert-iblant-pa-den-forste-websiden-han-lagde/503077?key=qxYxui4v" target="_blank">Digi.no interview (2020) <span class="highlight">[NO]</span></a></section-item>
@@ -288,6 +290,7 @@
 						</list-section>
 
 						<list-section heading="Talks">
+							<section-item>Composable Commerce (2022)<br /><span class="sub">TRY Dig webinar</span></section-item>
 							<section-item>Building Kygo Life through craftsmanship (2016)<br /><span class="sub">Adobe Creative Meet Up</span></section-item>
 							<section-item>WebGL in 2016 (2016)<br /><span class="sub">Framsia</span></section-item>
 							<section-item>Building a brand (Kygo Life) (2016)<br /><span class="sub">Norges Kreative Høyskole</span></section-item>

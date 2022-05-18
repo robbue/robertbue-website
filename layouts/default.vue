@@ -1,7 +1,7 @@
 <template>
 	<app-container>
 		<main-header />
-    <main class="content" ref="main" role="main" data-scroll-container>
+		<main class="content" ref="main" role="main" data-scroll-container>
 			<nuxt :polyfill="this.polyfillLoaded" />
 		</main>
 		<main-footer :route="$route.name" />

@@ -33,7 +33,7 @@
 
 	& .left {
 		max-width: 40%;
-		max-width: 200px;
+		max-width: 215px;
 		border-right: 1px solid rgba(255, 255, 255, 0.1);
 
 		color: var(--color-grey);
