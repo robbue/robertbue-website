@@ -13,11 +13,11 @@
 						<reveal ref="reveal3" primaryColor>and <strong>interaction designer</strong>.</reveal>
 					</h1> -->
 				</push-in>
-				<top-header text="Hey, I'm Robert Bue" aria-hidden="true" ref="topHeader" />
+				<top-header text="Hey, I'm Robert" aria-hidden="true" ref="topHeader" />
 			</page-header>
 			<push-in>
 				<p class="intro-large" ref="intro">
-					<reveal ref="reveal4">I work as a Solution Architect and Team Lead at <a href="https://www.trydig.no/" target="_blank">TRY Dig</a> in Oslo, Norway. I enjoy working on immersive, interactive experiences as much as large scale applications.</reveal>
+					<reveal ref="reveal4">I work as a CTO for <a href="https://www.nordvikbolig.no/" target="_blank">Nordvik Bolig</a> in Oslo, Norway. We create the next generation of technology in the real estate industry.</reveal>
 				</p>
 
 				<btn href="/about" ref="button" class="large">Get to know me</btn>
@@ -26,7 +26,7 @@
 		</div>
 		<picture class="bg" ref="bg">
 			<span role="img" aria-label="Profile picture of Robert Bue"></span>
-			<img src="~/static/images/robert-bue-v2-hq.jpg" alt="Robert Bue" aria-hidden="true">
+			<img src="~/static/images/2022/robert-bue.jpg" alt="Robert Bue" aria-hidden="true">
 		</picture>
   </div>
 </template>
@@ -37,9 +37,9 @@ import TopHeader from '~/components/TopHeader.vue';
 import PushIn from '~/components/PushIn.vue';
 import Btn from '~/components/Btn.vue';
 
-import desktopImage from '~/static/images/robert-bue-v2-hq.jpg';
-import mobileImage from '~/static/images/robert-bue-v2-bw.jpg';
-import depthMapImage from '~/static/images/dept-map-v2-hq.jpg';
+import desktopImage from '~/static/images/2022/robert-bue.jpg';
+// import mobileImage from '~/static/images/2022/robert-bue-bw.jpg';
+import depthMapImage from '~/static/images/2022/robert-bue-depth-map.jpg';
 
 import { mapGetters } from 'vuex';
 import { TweenMax } from 'gsap';
@@ -47,8 +47,8 @@ import { TweenMax } from 'gsap';
 
 const IMAGE = {
 	width: 2448,
-	height: 1530,
-	ratio: 2448 / 1530
+	height: 1280,
+	ratio: 2448 / 1280
 };
 
 let comp;
@@ -115,9 +115,9 @@ export default {
 			this.app = new PIXI.Application({
 			    width: window.innerWidth,
 			    height: window.innerHeight,
-					resizeTo: this.$refs.bg,
-					// antialias: true,
-					resolution: window.devicePixelRatio
+			    resizeTo: this.$refs.bg,
+			    // antialias: true,
+			    resolution: window.devicePixelRatio
 			});
 
 			this.app.view.classList.add('canvas');
@@ -126,7 +126,6 @@ export default {
 
 			this.bgContainer = new PIXI.Container();
 
-			// const image = PIXI.Texture.from(this.$store.state.isMobile ? mobileImage : desktopImage);
 			const image = PIXI.Texture.from(desktopImage);
 			const imgSprite = new PIXI.Sprite(image);
 			this.bgContainer.addChild(imgSprite);
@@ -145,16 +144,16 @@ export default {
 			this.app.stage.addChild(this.bgContainer);
 
 			this.displacementFilter = new PIXI.filters.DisplacementFilter(depthMapSprite);
-			this.colorFilter = new PIXI.filters.ColorMatrixFilter();
-			// this.blurFilter = new PIXI.filters.BlurFilter();
-			// this.blurFilter.blur = 0;
+			// this.colorFilter = new PIXI.filters.ColorMatrixFilter();
+			this.blurFilter = new PIXI.filters.BlurFilter();
+			this.blurFilter.blur = 10;
 
 			if (this.$store.state.isMobile) {
 				// window.addEventListener('deviceorientation', this.onDeviceMove);
-				this.app.stage.filters = [this.colorFilter];
+				this.app.stage.filters = [this.blurFilter]; // this.colorFilter
 			} else {
-				this.app.stage.filters = [this.displacementFilter, this.colorFilter]; // , this.blurFilter
-				this.colorFilter.desaturate();
+				this.app.stage.filters = [this.displacementFilter, this.blurFilter]; // , this.blurFilter
+				// this.colorFilter.desaturate();
 				window.addEventListener('mousemove', this.onMouseMove);
 			}
 
@@ -192,8 +191,8 @@ export default {
 			.add(revealTls, 0, 'normal', 0.2)
 			.staggerTo(this.fadeElements, 1, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 0.2, 1.6)
 			.to(this.$refs.topHeader.$refs.line, 0.6, { scaleX: 1, ease: Expo.easeInOut }, 1.4)
-			.to(this.colorFilter, 2, { alpha: 0, ease: Expo.easeInOut }, 1.4)
-			// .to(this.blurFilter, 2, { blur: 0, ease: Expo.easeInOut }, 1.4)
+			// .to(this.colorFilter, 2, { alpha: 0, ease: Expo.easeInOut }, 1.4)
+			.to(this.blurFilter, 2, { blur: 0, ease: Expo.easeInOut }, 1.4)
 			// .to(this.$refs.bg, 3, { scale: 1, autoAlpha: 1, ease: Power2.easeOut }, 1.8);
 		},
 
@@ -210,7 +209,7 @@ export default {
 
 		onDeviceMove: function (e) {
 			var beta = event.beta;
-  		var gamma = event.gamma;
+			var gamma = event.gamma;
 
 			// console.log({
 			// 	x: beta / 5,
@@ -222,39 +221,43 @@ export default {
 		},
 
 		onResize: function () {
-			const windowWidth = window.innerWidth;
-			const windowHeight = window.innerHeight;
+			const type = 'cover';
 
-			let ratio = Math.min(windowWidth / IMAGE.width, windowHeight / IMAGE.height);
+			var bgSize = {
+				x: window.innerWidth,
+				y: window.innerHeight
+			};
 
-			let width = Math.ceil(IMAGE.width * ratio);
-			let height = Math.ceil(IMAGE.height * ratio);
+			var sp = {
+				x: IMAGE.width,
+				y: IMAGE.height
+			};
 
-			let x = (windowWidth - width) - (windowWidth * 0.05);
-			let y = (windowHeight - height) / 2;
+			var winratio = bgSize.x / bgSize.y;
+			var spratio = sp.x / sp.y;
+			var scale = 1;
+			var pos = new PIXI.Point(0, 0);
 
-
-			// Screen is higher then wide (typical mobile/tablet)
-			if (windowHeight > windowWidth) {
-				ratio = windowHeight / IMAGE.height
-				width = IMAGE.width * ratio;
-				height = windowHeight;
-
-				x = -(width - windowWidth) + (windowWidth * 0.75);
-				y = 0;
+			if (type == 'cover' ? (winratio > spratio) : (winratio < spratio)) {
+				//photo is wider than background
+				scale = bgSize.x/sp.x;
+				pos.y = -((sp.y * scale) - bgSize.y) / 2
+			} else {
+				//photo is taller than background
+				scale = bgSize.y/sp.y;
+				pos.x = -((sp.x * scale) - bgSize.x) / 2
 			}
 
-			// console.log({
-			// 	width,
-			// 	height,
-			// 	ratio,
-			// 	x
-			// });
+			if (bgSize.y > bgSize.x) {
+				var ratio = bgSize.y / sp.y
+				var width = sp.x * ratio;
+				var height = bgSize.y;
 
-			this.bgContainer.position.x = x;
-			this.bgContainer.position.y = y;
-			this.bgContainer.scale.x = ratio;
-			this.bgContainer.scale.y = ratio;
+				pos.x = -(width - bgSize.x) + (bgSize.x * 0.90);
+			}
+
+			this.bgContainer.scale = new PIXI.Point(scale, scale);
+			this.bgContainer.position = pos;
 		}
 	},
 
@@ -455,8 +458,8 @@ export default {
 
 			@media (--large) {
 				max-width: 100%;
-				width: 50%;
-				font-size: 1.8vw;
+				width: 60%;
+				font-size: 1.7vw;
 				margin-bottom: 45px;
 			}
 
@@ -573,6 +576,12 @@ export default {
 
 		& img {
 			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }

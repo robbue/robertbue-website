@@ -70,9 +70,7 @@ h1, h2, h3 {
   font-family: var(--font-header);
   font-weight: normal;
   line-height: 0.96;
-	/* color: var(--color-primary); */
-	color: var(--color-white);
-	color: #ffecb5;
+	color: var(--color-primary);
 
   transition: opacity 150ms ease-out;
 

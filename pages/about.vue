@@ -23,9 +23,11 @@
 
 					<div class="columns" ref="columns">
 						<div class="col col1">
-							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working at <strong>TRY Dig in Oslo, Norway</strong> with over <strong>{{ this.experience }} years of experience</strong> in creating digital services and experiences. In my position as <strong>Solution Architect</strong>, I help clients to build modern, scalable services and platforms with focus on user experience. And in my position as a <strong>Team Lead</strong>, I help developers to keep focus and reach their potential.</p>
+							<p class="intro">My name is <strong>Robert Bue</strong>, I am {{ this.currentYear }} years old, working for <strong>Nordvik Bolig in Oslo, Norway</strong> with over <strong>{{ this.experience }} years of experience</strong> in creating digital services and experiences.</p>
+							
+							<p>After working a decade in creative and technology agencies, I made the leap over to work for a previous client. Using my broad experience from creating dozens of applications and services in the development of the next generation technology in the real estate industry. In my position as <strong>CTO</strong>, I lead the development in our journey to be the leading <a href="https://en.wikipedia.org/wiki/Property_technology" title="Property technology" target="_blank">PropTech</a> company in our industry.</p>
 
-							<p>All though I have worked most of my professional life with technology and as a developer, I have a <strong>studied interaction design</strong> and I enjoy combining code with design and animation to create the best possible experience for the user. <strong>My profession is one of my strongest passions</strong>, and I spend a lot of time trying out technologies and optimizing my work.</p>
+							<p>All though I have worked most of my professional life with technology, I have a <strong>studied interaction design</strong>, and I enjoy combining technology and design to create rich and intuitive user experiences.</p>
 
 							<p>One of my other passions is running, and I'm a marathon-/ultra runner that help me to to stay in shape, as well as pushing my physical and mental boundaries.</p>
 						</div>
@@ -122,14 +124,24 @@
 						<list-section heading="Experience">
 							<section-detail>
 								<span slot="left">
+									<strong>CTO</strong><br />
+									<a href="https://www.nordvikbolig.no/" title="Nordvik eiendomsmegling" target="_blank">Nordvik Bolig</a>
+								</span>
+								<span slot="right">
+									<time>Aug. 2022 - present</time>
+								</span>
+					    	</section-detail>
+							
+							<section-detail>
+								<span slot="left">
 									<strong>Solution Architect & Team Lead</strong><br />
 									<a href="https://www.trydig.no/" title="TRY Dig - design- og teknologiselskap" target="_blank">TRY Dig</a>
 								</span>
 								<span slot="right">
-									<time>Sept. 2021 - present</time>
+									<time>Sept. 2021 - Jul. 2022</time>
 									<span class="desc">previously TRY Pearl</span>
 								</span>
-					    </section-detail>
+					    	</section-detail>
 
 							<section-detail>
 								<span slot="left">
@@ -522,6 +534,11 @@ export default {
 
 				@media (--medium) {
 					font-size: 20px;
+				}
+
+				& a {
+					text-decoration: underline;
+					text-decoration-style: dotted;
 				}
 			}
 		}

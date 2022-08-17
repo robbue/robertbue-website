@@ -101,7 +101,7 @@ export default {
 		text-align: left;
 
 		display: flex;
-	  justify-content: center;
+	  	justify-content: center;
 		flex-direction: column;
 
 		@media (--medium) {
@@ -169,7 +169,8 @@ export default {
 			font-size: 13px;
 			font-weight: var(--font-weight-bold);
 			color: var(--color-white);
-			opacity: 0.4;
+			color: var(--color-grey);
+			/* opacity: 0.4; */
 		}
 
 		/*&:before {
@@ -213,7 +214,8 @@ export default {
 		}
 
 		&:hover {
-			opacity: 1;
+			/* opacity: 1; */
+			color: var(--color-white);
 			/*opacity: 1;*/
 			/*color: var(--color-dark);*/
 
@@ -223,7 +225,8 @@ export default {
 		}
 
 		&.nuxt-link-exact-active {
-			opacity: 1;
+			/* opacity: 1; */
+			color: var(--color-white);
 			/*color: var(--color-primary);*/
 			/*opacity: 1;*/
 			/*color: var(--color-dark);*/

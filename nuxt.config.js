@@ -16,12 +16,12 @@ module.exports = {
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ name: 'theme-color', content: '#000000' },
-			{ hid: 'description', name: 'description', content: 'Award-winning Full Stack Developer & Interaction designer living in Oslo, Norway.' },
+			{ name: 'theme-color', content: '#213b4a' },
+			{ hid: 'description', name: 'description', content: 'Award-winning technologist living in Oslo, Norway.' },
 			{ hid: 'author', name: 'author', content: 'Robert Bue' },
 			{ name: 'og:title', content: 'Robert Bue' },
-      { name: 'og:description', content: `Award-winning Full Stack Developer & Interaction designer living in Oslo, Norway.` },
-      { name: 'og:image', content: '~/static/images/robert-bue.jpg' }
+			{ name: 'og:description', content: `Award-winning technologist living in Oslo, Norway.` },
+			{ name: 'og:image', content: '~/static/images/2022/robert-bue.jpg' }
 		],
 		script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js' }
