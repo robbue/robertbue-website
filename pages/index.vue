@@ -253,7 +253,7 @@ export default {
 				var width = sp.x * ratio;
 				var height = bgSize.y;
 
-				pos.x = -(width - bgSize.x) + (bgSize.x * 0.90);
+				pos.x = -(width - bgSize.x) + (bgSize.x * 0.85);
 			}
 
 			this.bgContainer.scale = new PIXI.Point(scale, scale);
