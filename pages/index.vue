@@ -186,7 +186,7 @@ export default {
 			this.introTL = new TimelineMax({ paused: true })
 			.set(this.fadeElements, { autoAlpha: 0, y: this.$store.state.isMobile ? -10 : -15, immediateRender: true })
 			.set(this.$refs.topHeader.$refs.line, { scaleX: 0, immediateRender: true })
-			.to(this.$refs.bg, 3, { autoAlpha: this.$store.state.isMobile ? 0.4 : 1, ease: Power2.easeOut })
+			.to(this.$refs.bg, 3, { autoAlpha: this.$store.state.isMobile ? 1 : 1, ease: Power2.easeOut })
 			// .set(this.$refs.bg, { scale: 1.05, autoAlpha: 0, transformOrigin: '50% 50%', immediateRender: true })
 			.add(revealTls, 0, 'normal', 0.2)
 			.staggerTo(this.fadeElements, 1, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 0.2, 1.6)
